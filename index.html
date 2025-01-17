@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMW Configurator</title>
+  <style>
+    /* General Button Styles */
+    .default, .button {
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      padding: 10px;
+    }
+
+    /* Default Button */
+    .default {
+      background-color: white;
+      border: 2px solid black;
+      color: black;
+    }
+
+    /* Colored Buttons */
+    .button {
+      border: none;
+      color: white;
+    }
+
+    .button1 { background-color: #566ba4; }
+    .button2 { background-color: #868a8b; }
+    .button3 { background-color: #3a3f4b; }
+    .button4 { background-color: #303030; }
+    .button5 { background-color: #b2492d; }
+    .button6 { background-color: #691f26; }
+    .button7 { background-color: #214522; }
+
+    /* Header Styles */
+    h1, h2 {
+      font-family: Arial, sans-serif;
+    }
+
+    h2 {
+      margin-top: 20px;
+    }
+
+    /* Image Styling */
+    img {
+  width: 100%;          /* Makes the image scale with its container */
+  max-width: 900px;     /* Ensures the image doesn't exceed 900px */
+  height: auto;         /* Maintains the aspect ratio */
+  display: block;
+  margin: 20px auto;    /* Centers the image horizontally */
+}
+  </style>
+</head>
+<body>
+  <!-- Page Header -->
+  <h1>BMW Configurator</h1>
+  <h2><b>M850i xDrive Convertible</b></h2>
+
+  <!-- Color Configurator -->
+  <h2>Change Color</h2>
+  <button class="default" onclick="document.getElementById('myImage').src='Images/imgw.png'">Default</button>
+  <img id="myImage" src="Images/imgw.png" alt="Default Car Image">
+  <br>
+  <button class="button button1" onclick="document.getElementById('myImage').src='Images/2 Portimao Blue Metallic.png'">Portimao Blue Metallic</button>
+  <button class="button button2" onclick="document.getElementById('myImage').src='Images/3 Skyscraper Grey metallic.png'">Skyscraper Grey Metallic</button>
+  <button class="button button3" onclick="document.getElementById('myImage').src='Images/4 Carbon Black Metallic.png'">Carbon Black Metallic</button>
+  <button class="button button4" onclick="document.getElementById('myImage').src='Images/5 Black Sapphire Metallic.png'">Black Sapphire Metallic</button>
+  <button class="button button5" onclick="document.getElementById('myImage').src='Images/6 Sunset Orange Metallic.png'">Sunset Orange Metallic</button>
+  <button class="button button6" onclick="document.getElementById('myImage').src='Images/7 Aventurine Red III Metallic.png'">Aventurine Red III Metallic</button>
+  <button class="button button7" onclick="document.getElementById('myImage').src='Images/8 Sanremo Green metallic.png'">Sanremo Green Metallic</button>
+  <br>
+  <!-- Tyre Configurator -->
+  <h2>Change Tyres</h2>
+  <button class="default" onclick="document.getElementById('myImage1').src='Images/1 20 Double-spoke style 895 M Bicolour Jet black, Mixed tyres.png'">Default</button>
+  <img id="myImage1" src="Images/1 20 Double-spoke style 895 M Bicolour Jet black, Mixed tyres.png" alt="Default Tyres">
+  <br>
+  <button class="button button4" onclick="document.getElementById('myImage1').src='Images/2 20 Y-spoke style 728M Jetblack.png'">20" Y-spoke style 728M Jetblack</button>
+  <button class="button button4" onclick="document.getElementById('myImage1').src='Images/3 20 Y-spoke style 728M Bicolour.png'">20" Y-spoke style 728M Bicolour</button>
+  <button class="button button4" onclick="document.getElementById('myImage1').src='Images/4 20 V-spoke style 730I.png'">20" V-spoke style 730I</button>
+</body>
+</html>
